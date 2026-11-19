@@ -1110,7 +1110,7 @@
     if (e.key === 'Escape' && trailerModal.classList.contains('is-open')) closeTrailer();
   });
 
-  // Press Kit modal — reads press/list.php, which scans the /press folder live
+  // Press Kit modal — reads press/list.json (regenerate with tools/build_manifests.py)
   var pressModal = document.getElementById('pressModal');
   var pressBody = document.getElementById('pressPanelBody');
   var lastPressTrigger = null;
@@ -1158,7 +1158,7 @@
     var closeBtn = pressModal.querySelector('.trailer-close');
     if (closeBtn) closeBtn.focus();
     if (!pressLoaded) {
-      fetch('press/list.php')
+      fetch('press/list.json')
         .then(function(res){ if (!res.ok) throw new Error('bad status'); return res.json(); })
         .then(function(data){ pressLoaded = true; renderPress(data); })
         .catch(function(){
@@ -1184,8 +1184,8 @@
     if (e.key === 'Escape' && pressModal.classList.contains('is-open')) closePress();
   });
 
-  // Episode Guides modal — reads downloads/guides.php, which scans the
-  // per-episode downloads/S1EN/ folders for one guide type at a time
+  // Episode Guides modal — reads downloads/guides.json (regenerate with
+  // tools/build_manifests.py after adding an episode's guides)
   var guidesModal = document.getElementById('guidesModal');
   var guidesBody = document.getElementById('guidesPanelBody');
   var guidesTitle = document.getElementById('guidesTitle');
@@ -1224,9 +1224,13 @@
       return;
     }
     guidesBody.innerHTML = '<p class="press-loading">Loading guides&hellip;</p>';
-    fetch('downloads/guides.php?type=' + encodeURIComponent(type))
+    fetch('downloads/guides.json')
       .then(function(res){ if (!res.ok) throw new Error('bad status'); return res.json(); })
-      .then(function(data){ guidesCache[type] = data; renderGuides(data); })
+      .then(function(all){
+        if (!all[type]) throw new Error('unknown guide type');
+        guidesCache[type] = all[type];
+        renderGuides(all[type]);
+      })
       .catch(function(){
         guidesBody.innerHTML = '<p class="press-error">Couldn’t load guides right now — please try again later.</p>';
       });
