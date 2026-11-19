@@ -1,0 +1,54 @@
+{
+  "releases": [
+    {
+      "name": "Superpod National Press Release v1.pdf",
+      "url": "Superpod%20National%20Press%20Release%20v1.pdf",
+      "size": "3.6 MB",
+      "modified": "Aug 28, 2026"
+    },
+    {
+      "name": "Superpod SB Press Release 082426.pdf",
+      "url": "Superpod%20SB%20Press%20Release%20082426.pdf",
+      "size": "3.3 MB",
+      "modified": "Aug 21, 2026"
+    }
+  ],
+  "photos": [
+    {
+      "name": "Cody and Malia in Studio.jpeg",
+      "url": "photos/Cody%20and%20Malia%20in%20Studio.jpeg",
+      "size": "1.1 MB",
+      "modified": "Aug 30, 2026"
+    },
+    {
+      "name": "Malia and Cody.jpg",
+      "url": "photos/Malia%20and%20Cody.jpg",
+      "size": "2.4 MB",
+      "modified": "Aug 14, 2026"
+    },
+    {
+      "name": "Malia in Studio.jpeg",
+      "url": "photos/Malia%20in%20Studio.jpeg",
+      "size": "1.0 MB",
+      "modified": "Aug 30, 2026"
+    },
+    {
+      "name": "Malia Recording.jpeg",
+      "url": "photos/Malia%20Recording.jpeg",
+      "size": "1.2 MB",
+      "modified": "Aug 30, 2026"
+    },
+    {
+      "name": "Postcard.png",
+      "url": "photos/Postcard.png",
+      "size": "2.6 MB",
+      "modified": "Aug 14, 2026"
+    },
+    {
+      "name": "Young Orca in Norway.jpg",
+      "url": "photos/Young%20Orca%20in%20Norway.jpg",
+      "size": "11.0 MB",
+      "modified": "Aug 14, 2026"
+    }
+  ]
+}
