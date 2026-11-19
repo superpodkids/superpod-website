@@ -847,6 +847,46 @@ main [id]{ scroll-margin-top: 96px; }
 
 .ep-card.is-soon{ opacity: 0.82; }
 .ep-soon-note{ margin-top: 14px; font-size: 0.9rem; color: var(--ink-soft); font-style: italic; }
+/* ---------- SEASON TABS ---------- */
+.season-tabs{
+  display: inline-flex;
+  gap: 6px;
+  padding: 5px;
+  margin-bottom: clamp(22px, 4vw, 34px);
+  background: rgba(18,58,76,0.08);
+  border-radius: 999px;
+}
+.season-tab{
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: .01em;
+  padding: 11px 24px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
+}
+.season-tab:hover{ color: var(--ink); }
+.season-tab[aria-selected="true"]{
+  background: var(--gold);
+  color: #4A2E06;
+  box-shadow: 0 6px 16px -6px rgba(232,174,61,0.8);
+}
+.season-tab:focus-visible{ outline: 3px solid var(--ink); outline-offset: 2px; }
+.season-panel[hidden]{ display: none; }
+.ep-blurb{ margin: 14px 0 0; max-width: 62ch; font-size: 1rem; line-height: 1.55; color: var(--ink-soft); }
+.ep-soon-signup{ margin-top: 12px; }
+.ep-soon-signup .ep-soon-note{ margin-top: 0; font-size: 1rem; }
+.ep-soon-signup .signup-form{ margin-top: 14px; justify-content: flex-start; }
+.ep-soon-signup .signup-status{ text-align: left; }
+@media (max-width: 560px){
+  .season-tabs{ display: flex; }
+  .season-tab{ flex: 1; padding: 11px 12px; }
+}
+
 #sleep .ep-tag.soon{ background: rgba(255,255,255,0.08); color: var(--foam-soft); border-color: rgba(255,255,255,0.22); }
 #sleep .ep-soon-note{ color: var(--foam-soft); }
 
