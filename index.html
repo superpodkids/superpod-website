@@ -294,10 +294,10 @@
   <section class="band-season" id="episodes">
     <div class="wrap">
       <div class="season-tabs reveal" role="tablist" aria-label="Choose a season">
-        <button type="button" class="season-tab" role="tab" id="tab-season-2" aria-controls="season-2" aria-selected="true" data-season="2">Season Two</button>
-        <button type="button" class="season-tab" role="tab" id="tab-season-1" aria-controls="season-1" aria-selected="false" data-season="1" tabindex="-1">Season One</button>
+        <button type="button" class="season-tab" role="tab" id="tab-season-1" aria-controls="season-1" aria-selected="true" data-season="1">Season One</button>
+        <button type="button" class="season-tab" role="tab" id="tab-season-2" aria-controls="season-2" aria-selected="false" data-season="2" tabindex="-1">Season Two</button>
       </div>
-      <div class="season-panel" id="season-2" role="tabpanel" aria-labelledby="tab-season-2">
+      <div class="season-panel" id="season-2" role="tabpanel" aria-labelledby="tab-season-2" hidden>
       <div class="band-head reveal">
         <h2>Season Two has begun. Come back to the ocean!</h2>
         <p class="band-sub">New SuperPod adventures arrive about once a month. Episode 1, our Winter Special, is out now.</p>
@@ -355,7 +355,7 @@
         </article>
       </div>
       </div>
-      <div class="season-panel" id="season-1" role="tabpanel" aria-labelledby="tab-season-1" hidden>
+      <div class="season-panel" id="season-1" role="tabpanel" aria-labelledby="tab-season-1">
       <div class="band-head reveal">
         <h2>Six heartwarming stories, one ocean. Welcome to SuperPod, Season One!</h2>
         <p class="band-sub">Each ocean adventure helps little listeners grow braver, calmer, and more connected.</p>
@@ -1002,7 +1002,7 @@
   document.querySelectorAll('.signup-form').forEach(wireKitForm);
 
 
-  // Season tabs (Season Two shown by default). Exposes window.showSeason so other
+  // Season tabs (Season One shown by default). Exposes window.showSeason so other
   // scripts (the hero "Listen Now" button) can reveal Season One before scrolling.
   (function(){
     var tabs = Array.prototype.slice.call(document.querySelectorAll('.season-tab'));
