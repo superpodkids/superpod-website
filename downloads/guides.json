@@ -1,0 +1,96 @@
+{
+  "parent": {
+    "label": "Parent Guide",
+    "guides": [
+      {
+        "episode": "S1E1",
+        "title": "The Sound of Home",
+        "name": "SuperPod S1E1 Parent Guide.pdf",
+        "url": "S1E1/SuperPod%20S1E1%20Parent%20Guide.pdf"
+      },
+      {
+        "episode": "S1E2",
+        "title": "Kiko Tries New Things",
+        "name": "SuperPod S1E2 Parent Guide.pdf",
+        "url": "S1E2/SuperPod%20S1E2%20Parent%20Guide.pdf"
+      },
+      {
+        "episode": "S1E3",
+        "title": "Kiko Calms Herself",
+        "name": "SuperPod S1E3 Parent Guide.pdf",
+        "url": "S1E3/SuperPod%20S1E3%20Parent%20Guide.pdf"
+      },
+      {
+        "episode": "S1E4",
+        "title": "Kiko Makes a Friend",
+        "name": "SuperPod S1E4 Parent Guide.pdf",
+        "url": "S1E4/SuperPod%20S1E4%20Parent%20Guide.pdf"
+      },
+      {
+        "episode": "S1E5",
+        "title": "Echo Finds Her Way",
+        "name": "SuperPod S1E5 Parent Guide.pdf",
+        "url": "S1E5/SuperPod%20S1E5%20Parent%20Guide.pdf"
+      },
+      {
+        "episode": "S1E6",
+        "title": "Every Orca Has a Gift",
+        "name": "SuperPod S1E6 Parent Guide.pdf",
+        "url": "S1E6/SuperPod%20S1E6%20Parent%20Guide.pdf"
+      },
+      {
+        "episode": "S2E1",
+        "title": "Chasing the Last Sunbeam",
+        "name": "SuperPod S2E1 Parent Guide.pdf",
+        "url": "S2E1/SuperPod%20S2E1%20Parent%20Guide.pdf"
+      }
+    ]
+  },
+  "teacher": {
+    "label": "Teacher Guide",
+    "guides": [
+      {
+        "episode": "S1E1",
+        "title": "The Sound of Home",
+        "name": "SuperPod S1E1 Teacher Guide.pdf",
+        "url": "S1E1/SuperPod%20S1E1%20Teacher%20Guide.pdf"
+      },
+      {
+        "episode": "S1E2",
+        "title": "Kiko Tries New Things",
+        "name": "SuperPod S1E2 Teacher Guide.pdf",
+        "url": "S1E2/SuperPod%20S1E2%20Teacher%20Guide.pdf"
+      },
+      {
+        "episode": "S1E3",
+        "title": "Kiko Calms Herself",
+        "name": "SuperPod S1E3 Teacher Guide.pdf",
+        "url": "S1E3/SuperPod%20S1E3%20Teacher%20Guide.pdf"
+      },
+      {
+        "episode": "S1E4",
+        "title": "Kiko Makes a Friend",
+        "name": "SuperPod S1E4 Teacher Guide.pdf",
+        "url": "S1E4/SuperPod%20S1E4%20Teacher%20Guide.pdf"
+      },
+      {
+        "episode": "S1E5",
+        "title": "Echo Finds Her Way",
+        "name": "SuperPod S1E5 Teacher Guide.pdf",
+        "url": "S1E5/SuperPod%20S1E5%20Teacher%20Guide.pdf"
+      },
+      {
+        "episode": "S1E6",
+        "title": "Every Orca Has a Gift",
+        "name": "SuperPod S1E6 Teacher Guide.pdf",
+        "url": "S1E6/SuperPod%20S1E6%20Teacher%20Guide.pdf"
+      },
+      {
+        "episode": "S2E1",
+        "title": "Chasing the Last Sunbeam",
+        "name": "SuperPod S2E1 Teacher Guide.pdf",
+        "url": "S2E1/SuperPod%20S2E1%20Teacher%20Guide.pdf"
+      }
+    ]
+  }
+}
